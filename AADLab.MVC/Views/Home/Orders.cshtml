@@ -1,0 +1,9 @@
+﻿@model IEnumerable<AADLab.MVC.Models.Order>
+
+@{
+    ViewBag.Title = "Orders";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@Html.ListBox("Stuff", Model.Select(o => new SelectListItem{Text = o.OrderId, Value = o.PlacedBy}));
