@@ -28,9 +28,9 @@ namespace AADLab.WebAPI.Controllers
         public async Task<IHttpActionResult> CreateFor(string userId, OrderRequest order)
         {
             if (String.IsNullOrEmpty(userId)) return BadRequest("invalid user id");
-            if (order.Equals(OrderRequest.Empty)) return BadRequest("invalid order request");
+            if (order == null || order.Equals(OrderRequest.Empty)) return BadRequest("invalid order request");
 
-            var orderId = userId.GetHashCode() + "-" + Guid.NewGuid();
+            var orderId = userId.GetHashCode().ToString("x") + "-" + Guid.NewGuid();
             return Ok(await _repository.Save(new Order(orderId, userId)));
         }
     }

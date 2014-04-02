@@ -70,6 +70,6 @@ type InMemoryRepository() =
             async {
                 let! orders = store.PostAndAsyncReply (fun ch -> (LoadOrdersBy (userId, ch)))
                 let l = min - (Seq.length orders)
-                if l > 0 then return generateOrder userId l
+                if l > 0 then return Seq.append orders (generateOrder userId l)
                 else return orders
             } |> Async.StartAsTask
