@@ -9,6 +9,7 @@ namespace AADLab.WebAPI
         {
             var config = new HttpConfiguration();
             config.MapHttpAttributeRoutes();
+            config.EnsureInitialized();
 
             appBuilder.UseWebApi(config);
         }

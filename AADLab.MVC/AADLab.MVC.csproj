@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -122,7 +123,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Order.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -159,17 +159,17 @@
     <Content Include="Views\Home\Orders.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AADLab.Common\AADLab.Common.fsproj">
-      <Project>{50285e5d-22c7-45c3-8953-c5bcb8d718ae}</Project>
-      <Name>AADLab.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AADLab.Common\AADLab.Common.fsproj">
+      <Project>{a0ecf81f-0aa8-4a3b-ac3c-37dde6e925c9}</Project>
+      <Name>AADLab.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

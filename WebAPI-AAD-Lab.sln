@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AADLab.MVC", "AADLab.MVC\AA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AADLab.WebAPI", "AADLab.WebAPI\AADLab.WebAPI.csproj", "{6EAE648C-E110-4895-81BA-726A2B498D17}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AADLab.Common", "AADLab.Common\AADLab.Common.fsproj", "{50285E5D-22C7-45C3-8953-C5BCB8D718AE}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AADLab.Common", "AADLab.Common\AADLab.Common.fsproj", "{A0ECF81F-0AA8-4A3B-AC3C-37DDE6E925C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{6EAE648C-E110-4895-81BA-726A2B498D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EAE648C-E110-4895-81BA-726A2B498D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EAE648C-E110-4895-81BA-726A2B498D17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50285E5D-22C7-45C3-8953-C5BCB8D718AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50285E5D-22C7-45C3-8953-C5BCB8D718AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50285E5D-22C7-45C3-8953-C5BCB8D718AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50285E5D-22C7-45C3-8953-C5BCB8D718AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0ECF81F-0AA8-4A3B-AC3C-37DDE6E925C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0ECF81F-0AA8-4A3B-AC3C-37DDE6E925C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0ECF81F-0AA8-4A3B-AC3C-37DDE6E925C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0ECF81F-0AA8-4A3B-AC3C-37DDE6E925C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
