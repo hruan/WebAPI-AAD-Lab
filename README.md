@@ -26,21 +26,29 @@ queries regarding orders placed by a certain user identified by an user id.
 
 - Decide on how to achieve the above using the scenarios described at:
   http://msdn.microsoft.com/library/azure/jj573266.aspx
-- SAML, OAuth, or WS-Federation?
-- What are the distinctions between the two different application we can create
-  for an Azure AD?
+- What protocol? SAML Passive, OAuth, or WS-Federation?
+- What are the distinctions between the two different application types we
+  can create for an Azure AD tenant?
 - If needed, how can we retrieve more information about the user than provided
   by the claims?
+- How would we implement role-based authorization?
 - Is it necessary establish some kind of trust between frontend and backend?
+- How would we establish trust between two components?
+- Imagine a "real" data persistence layer, how can we ensure tenants are only
+  allowed to access their own data? What are the implications and trade-offs?
 
-## Pitfalls and things to avoid
+## Quirks and pitfalls
 
 - http://www.cloudidentity.com/blog/2013/12/11/setting-up-an-asp-net-project-with-organizational-authentication-requires-an-organizational-account/
-- ACS as it is no longer being developed
-- AAL which has been superseded by ADAL
-- Manually editing the application manifest
+- Avoid ACS as it is no longer being developed (e.g. ADAL 2.0 will not support ACS)
+- Avoid AAL as it has been superseded by ADAL
+- Avoid manually editing the application manifest as it will break the portal :(
+- "App ID URI" is just unique identifier for your application
 
 ## Resources
+
+### Concept overview
+- https://cwiki.apache.org/confluence/download/attachments/27849062/Fediz_Detailed.png?version=1&modificationDate=1339179408000&api=v2
 
 ### Securing Web API
 - http://msdn.microsoft.com/en-us/magazine/dn463788.aspx
@@ -51,5 +59,3 @@ queries regarding orders placed by a certain user identified by an user id.
 - http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/
 - http://www.cloudidentity.com/blog/2013/09/16/getting-acquainted-with-authenticationresult/
 - http://www.cloudidentity.com/blog/2013/10/29/using-adals-acquiretokenby-authorizationcode-to-call-a-web-api-from-a-web-app/
-- http://www.cloudidentity.com/blog/2013/10/29/using-adals-acquiretokenby-authorizationcode-to-call-a-web-api-from-a-web-app/
-
